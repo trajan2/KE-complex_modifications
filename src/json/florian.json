@@ -137,14 +137,14 @@
                 "from": {
                     "key_code": "a",
                     "modifiers": {
-                        "mandatory": [
-                            "shift"
+                        "optional": [
+                            "any"
                         ]
                     }
                 },
                 "to": [
                     {
-                        "key_code": "page_up",
+                        "key_code": "open_bracket",
                         "modifiers": [
                             "left_control",
                             "left_shift"
@@ -164,14 +164,14 @@
                 "from": {
                     "key_code": "s",
                     "modifiers": {
-                        "mandatory": [
-                            "shift"
+                        "optional": [
+                            "any"
                         ]
                     }
                 },
                 "to": [
                     {
-                        "key_code": "page_down",
+                        "key_code": "close_bracket",
                         "modifiers": [
                             "left_control",
                             "left_shift"
@@ -210,7 +210,59 @@
 			
 			
 		]
+    },
+    
+    {"description": "CAPS + ed to go up and down page",
+		"manipulators": [
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "e",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "page_up"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "d",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "page_down"
+                    }
+                ],
+                "type": "basic"
+            }	
+		]
 	},
+
 	{"description": "CAPS + y undo, Y redo",
 		"manipulators": [
             {
@@ -502,6 +554,50 @@
                     },
                     {
                         "key_code": "down_arrow"
+                    }
+                ],
+                "type": "basic"
+            }
+		]
+    },
+
+    {"description": "CAPS + b and § for ESC",
+		"manipulators": [
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "b",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "escape"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "from": {
+                    "key_code": "non_us_backslash",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "escape"
                     }
                 ],
                 "type": "basic"
