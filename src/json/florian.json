@@ -316,7 +316,7 @@
                 },
                 "to": [
                     {
-                        "key_code": "arrow_left",
+                        "key_code": "left_arrow",
                         "modifiers": [
                             "left_option"
                         ]
@@ -368,7 +368,7 @@
                 },
                 "to": [
                     {
-                        "key_code": "arrow_right",
+                        "key_code": "right_arrow",
                         "modifiers": [
                             "left_option"
                         ]
