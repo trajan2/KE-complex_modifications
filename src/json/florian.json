@@ -146,7 +146,7 @@
                     {
                         "key_code": "open_bracket",
                         "modifiers": [
-                            "left_control",
+                            "left_command",
                             "left_shift"
                         ]
                     }
@@ -173,34 +173,8 @@
                     {
                         "key_code": "close_bracket",
                         "modifiers": [
-                            "left_control",
+                            "left_command",
                             "left_shift"
-                        ]
-                    }
-                ],
-                "type": "basic"
-            },
-            {
-                "conditions": [
-                    {
-                        "name": "caps_lock pressed",
-                        "type": "variable_if",
-                        "value": 1
-                    }
-                ],
-                "from": {
-                    "key_code": "r",
-                    "modifiers": {
-                        "optional": [
-                            "any"
-                        ]
-                    }
-                },
-                "to": [
-                    {
-                        "key_code": "open_bracket",
-                        "modifiers": [
-                            "left_command"
                         ]
                     }
                 ],
@@ -231,10 +205,33 @@
                     }
                 ],
                 "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "r",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "open_bracket",
+                        "modifiers": [
+                            "left_command"
+                        ]
+                    }
+                ],
+                "type": "basic"
             }
-			
-			
-			
 		]
     },
     
