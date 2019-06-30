@@ -26,7 +26,7 @@
         }
       ]
     },
-	{"description": "CAPS + as to jump tabs, r go back"
+	{"description": "CAPS + as to jump tabs, r go back",
 		"manipulators": [
             {
                 "conditions": [
@@ -113,7 +113,7 @@
 			
 		]
 	},
-	{"description": "CAPS + y undo, Y redo"
+	{"description": "CAPS + y undo, Y redo",
 		"manipulators": [
             {
                 "conditions": [
