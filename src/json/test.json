@@ -1,7 +1,7 @@
 {
-  "title": "Florian Caps Modification",
+  "title": "sFlorian Caps Modification",
   "rules": [
-    {"description": "CAPS + hjkl to arrow keys",
+    {"description": "sCAPS + hjkl to arrow keys",
           "manipulators": [
               {
                   "conditions": [
