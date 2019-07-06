@@ -1,7 +1,7 @@
 {
-    "title": "Florian Script Modification",
+    "title": "Window Switcher",
     "rules": [
-      {"description": "Dismiss Window",
+      {"description": "Dismiss Window 1",
             "manipulators": [
                 {
                     "conditions": [
@@ -28,7 +28,7 @@
                 }
             ]
         },
-        {"description": "Dismiss Window",
+        {"description": "Dismiss Window 2",
             "manipulators": [
                 {
                     "conditions": [
@@ -48,7 +48,223 @@
                     },
                     "to": [
                         {
-                            "shell_command": "osascript ~/.config/karabiner/applescripts/auto_dismiss.scpt"
+                            "shell_command": "osascript ~/.config/karabiner/applescripts/auto_dismiss.scpt 2"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {"description": "Dismiss Window 3",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "name": "caps_lock pressed",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "3",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript ~/.config/karabiner/applescripts/auto_dismiss.scpt 3"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {"description": "Dismiss Window 4",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "name": "caps_lock pressed",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "4",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript ~/.config/karabiner/applescripts/auto_dismiss.scpt 4"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {"description": "Dismiss Window 5",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "name": "caps_lock pressed",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "5",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript ~/.config/karabiner/applescripts/auto_dismiss.scpt 5"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {"description": "Dismiss Window 6",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "name": "caps_lock pressed",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "6",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript ~/.config/karabiner/applescripts/auto_dismiss.scpt 6"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {"description": "Dismiss Window 7",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "name": "caps_lock pressed",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "7",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript ~/.config/karabiner/applescripts/auto_dismiss.scpt 7"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {"description": "Dismiss Window 8",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "name": "caps_lock pressed",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "8",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript ~/.config/karabiner/applescripts/auto_dismiss.scpt 8"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {"description": "Dismiss Window 9",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "name": "caps_lock pressed",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "9",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript ~/.config/karabiner/applescripts/auto_dismiss.scpt 9"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {"description": "Dismiss Window 10",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "name": "caps_lock pressed",
+                            "type": "variable_if",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
+                        "key_code": "0",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "osascript ~/.config/karabiner/applescripts/auto_dismiss.scpt 10"
                         }
                     ],
                     "type": "basic"
