@@ -345,7 +345,7 @@
 			
 		]
 	},
-	{"description": "CAPS + u|p to del, i|o to jump a word forward|backward",
+	{"description": "CAPS + i|o  u|p to jump forward|backward a word or line",
 		"manipulators": [
             {
                 "conditions": [
@@ -365,9 +365,9 @@
                 },
                 "to": [
                     {
-                        "key_code": "delete_or_backspace",
+                        "key_code": "left_arrow",
                         "modifiers": [
-                            "left_option"
+                            "left_command"
                         ]
                     }
                 ],
@@ -417,9 +417,9 @@
                 },
                 "to": [
                     {
-                        "key_code": "delete_forward",
+                        "key_code": "right_arrow",
                         "modifiers": [
-                            "left_option"
+                            "left_command"
                         ]
                     }
                 ],
@@ -444,6 +444,114 @@
                 "to": [
                     {
                         "key_code": "right_arrow",
+                        "modifiers": [
+                            "left_option"
+                        ]
+                    }
+                ],
+                "type": "basic"
+            }
+		]
+    },
+    {"description": "CAPS + option i|o  u|p to del forward|backward a word or line",
+		"manipulators": [
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "u",
+                    "modifiers": {
+                        "mandatory": [
+                            "option"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": [
+                            "left_command"
+                        ]
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "i",
+                    "modifiers": {
+                        "mandatory": [
+                            "option"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": [
+                            "left_option"
+                        ]
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "p",
+                    "modifiers": {
+                        "mandatory": [
+                            "option"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "delete_forward",
+                        "modifiers": [
+                            "left_command"
+                        ]
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "o",
+                    "modifiers": {
+                        "mandatory": [
+                            "option"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "delete_forward",
                         "modifiers": [
                             "left_option"
                         ]
@@ -621,6 +729,131 @@
                 "to": [
                     {
                         "key_code": "escape"
+                    }
+                ],
+                "type": "basic"
+            }
+		]
+    },
+    
+    {"description": "F12 to Delete",
+		"manipulators": [
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "f12",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "delete_forward"
+                    }
+                ],
+                "type": "basic"
+            }
+		]
+    }, 
+    
+    {"description": "Yabai move CAPS fgvt",
+		"manipulators": [
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "t",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "yabai -m window --focus north"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "g",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "yabai -m window --focus east"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "v",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "yabai -m window --focus south"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "f",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "yabai -m window --focus west"
                     }
                 ],
                 "type": "basic"
