@@ -739,13 +739,6 @@
     {"description": "F12 to Delete",
 		"manipulators": [
             {
-                "conditions": [
-                    {
-                        "name": "caps_lock pressed",
-                        "type": "variable_if",
-                        "value": 1
-                    }
-                ],
                 "from": {
                     "key_code": "f12",
                     "modifiers": {
