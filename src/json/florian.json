@@ -853,7 +853,7 @@
             }
 		]
     }, 
-    {"description": "ChunkWM CAPS Shift 1-5 Move window to desktop",
+    {"description": "ChunkWM CAPS Command 1-5 Move window to desktop",
 		"manipulators": [
             {
                 "conditions": [
@@ -866,8 +866,8 @@
                 "from": {
                     "key_code": "1",
                     "modifiers": {
-                        "mandatory": [
-                            "command"
+                        "optional": [
+                            "any"
                         ]
                     }
                 },
@@ -887,10 +887,10 @@
                     }
                 ],
                 "from": {
-                    "key_code": "2",
+                    "key_code": "'2'",
                     "modifiers": {
-                        "mandatory": [
-                            "command"
+                        "optional": [
+                            "any"
                         ]
                     }
                 },
@@ -910,7 +910,7 @@
                     }
                 ],
                 "from": {
-                    "key_code": "3",
+                    "key_code": "'3'",
                     "modifiers": {
                         "mandatory": [
                             "command"
