@@ -853,7 +853,7 @@
             }
 		]
     }, 
-    {"description": "ChunkWM CAPS cmd 1-5 Move window to desktop",
+    {"description": "ChunkWM CAPS cmd 1-5 Move window to Desktop",
 		"manipulators": [
             {
                 "conditions": [
@@ -969,7 +969,33 @@
                     }
                 ],
                 "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "/",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "osascript -e 'tell app \"Finder\" to display dialog \"Hello World\"'"
+                    }
+                ],
+                "type": "basic"
             }
+            
+            
+             
 		]
 	}
   ]
