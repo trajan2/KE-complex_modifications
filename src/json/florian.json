@@ -853,7 +853,7 @@
             }
 		]
     }, 
-    {"description": "ChunkWM CAPS cmd 1-5 Move window to Desktop",
+    {"description": "ChunkWM CAPS cmd 1-5 Move window to Desktopp",
 		"manipulators": [
             {
                 "conditions": [
@@ -979,6 +979,121 @@
                     }
                 ],
                 "from": {
+                    "key_code": "quote",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "osascript -e 'tell app \"Finder\" to display dialog \"quote shift\"'"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "quote",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "osascript -e 'tell app \"Finder\" to display dialog \"quote any\"'"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "slash",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "osascript -e 'tell app \"Finder\" to display dialog \"shift / \"'"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "slash",
+                    "modifiers": {
+                        "mandatory": [
+                            "option"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "osascript -e 'tell app \"Finder\" to display dialog \"/option\"'"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "slash",
+                    "modifiers": {
+                        "mandatory": [
+                            "control"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "osascript -e 'tell app \"Finder\" to display dialog \"/control\"'"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
                     "key_code": "slash",
                     "modifiers": {
                         "mandatory": [
@@ -988,7 +1103,53 @@
                 },
                 "to": [
                     {
-                        "shell_command": "osascript -e 'tell app \"Finder\" to display dialog \"Hello World\"'"
+                        "shell_command": "osascript -e 'tell app \"Finder\" to display dialog \"command/\"'"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "slash",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift", "option"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "osascript -e 'tell app \"Finder\" to display dialog \"/shift option\"'"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "conditions": [
+                    {
+                        "name": "caps_lock pressed",
+                        "type": "variable_if",
+                        "value": 1
+                    }
+                ],
+                "from": {
+                    "key_code": "slash",
+                    "modifiers": {
+                        "mandatory": [
+                            "command", "shift"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "osascript -e 'tell app \"Finder\" to display dialog \"/shift command\"'"
                     }
                 ],
                 "type": "basic"
