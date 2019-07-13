@@ -978,7 +978,7 @@
                     }
                 ],
                 "from": {
-                    "key_code": "f10",
+                    "key_code": "10",
                     "modifiers": {
                         "optional": [
                             "any"
@@ -1001,7 +1001,7 @@
                     }
                 ],
                 "from": {
-                    "key_code": "f11",
+                    "key_code": "11",
                     "modifiers": {
                         "optional": [
                             "any"
@@ -1024,7 +1024,7 @@
                     }
                 ],
                 "from": {
-                    "key_code": "f7",
+                    "key_code": "7",
                     "modifiers": {
                         "optinal": [
                             "any"
@@ -1047,7 +1047,7 @@
                     }
                 ],
                 "from": {
-                    "key_code": "f8",
+                    "key_code": "8",
                     "modifiers": {
                         "mandatory": [
                             "any"
@@ -1070,7 +1070,7 @@
                     }
                 ],
                 "from": {
-                    "key_code": "f9",
+                    "key_code": "9",
                     "modifiers": {
                         "optional": [
                             "any"
@@ -1093,7 +1093,7 @@
                     }
                 ],
                 "from": {
-                    "key_code": "escape",
+                    "key_code": "grave_accent_and_tilde",
                     "modifiers": {
                         "optional": [
                             "any"
@@ -1116,9 +1116,9 @@
                     }
                 ],
                 "from": {
-                    "key_code": "f1",
+                    "key_code": "1",
                     "modifiers": {
-                        "optional": [
+                        "mandatory": [
                             "any"
                         ]
                     }
@@ -1139,7 +1139,7 @@
                     }
                 ],
                 "from": {
-                    "key_code": "f2",
+                    "key_code": "2",
                     "modifiers": {
                         "optional": [
                             "any"
@@ -1162,7 +1162,7 @@
                     }
                 ],
                 "from": {
-                    "key_code": "f3",
+                    "key_code": "3",
                     "modifiers": {
                         "optional": [
                             "any"
@@ -1185,7 +1185,7 @@
                     }
                 ],
                 "from": {
-                    "key_code": "f4",
+                    "key_code": "4",
                     "modifiers": {
                         "optional": [
                             "any"
@@ -1208,7 +1208,7 @@
                     }
                 ],
                 "from": {
-                    "key_code": "f5",
+                    "key_code": "5",
                     "modifiers": {
                         "optional": [
                             "any"
@@ -1231,7 +1231,7 @@
                     }
                 ],
                 "from": {
-                    "key_code": "f6",
+                    "key_code": "6",
                     "modifiers": {
                         "optional": [
                             "any"
