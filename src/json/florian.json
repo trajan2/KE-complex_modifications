@@ -979,7 +979,7 @@
                     }
                 ],
                 "from": {
-                    "key_code": "/",
+                    "key_code": "slash",
                     "modifiers": {
                         "optional": [
                             "any"
@@ -993,10 +993,7 @@
                 ],
                 "type": "basic"
             }
-            
-            
-             
-		]
-	}
+        ]
+    }
   ]
 }
