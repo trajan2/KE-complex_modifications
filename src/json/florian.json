@@ -1244,6 +1244,22 @@
                     }
                 ],
                 "type": "basic"
+            },
+            {
+                "from": {
+                    "key_code": "q",
+                    "modifiers": {
+                        "mandatory": [
+                            "option"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "chunkc tiling::desktop --focus next"
+                    }
+                ],
+                "type": "basic"
             }
         ]
     }
