@@ -981,8 +981,8 @@
                 "from": {
                     "key_code": "slash",
                     "modifiers": {
-                        "optional": [
-                            "any"
+                        "mandatory": [
+                            "command"
                         ]
                     }
                 },
