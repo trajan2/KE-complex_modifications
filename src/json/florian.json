@@ -1217,7 +1217,7 @@
                 },
                 "to": [
                     {
-                        "shell_command": "chunkc tiling::desktop --focus 5"
+                        "shell_command": "osascript -e 'tell app \"Finder\" to display dialog \"Hello World\"'"
                     }
                 ],
                 "type": "basic"
